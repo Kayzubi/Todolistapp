@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+}
+
+nav {
+  box-shadow: 3px 3px 5px #a6a6a670;
+  margin-bottom: 10px;
+}
+.faded-text {
+  color: #a6a6a6;
+}
+
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.list-container {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 2rem;
+
+}
+ .list{
+  overflow-y: auto;
+  height: 300px;
+ }
+
+
+#add-tasks, .buttons {
+  margin: 20px;
+}
+
+.task-input {
+  width: 40%;
+  display: inline-block;
+}
+
+
+#filter-input {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.Task-title {
+  margin: 20px 0;
+}
+
+.modal-error {
+  display: none;
+  color: red;
+}
+
+.task-item {
+  text-align: left;
+ position: relative;
+ border-bottom: 1px solid #000;
+ margin: 10px 0;
+}
+
+.delete-item {
+  position: absolute;
+  color: red;
+  right: 5px;
+}
+
+.complete-item {
+  position: absolute;
+  color: green;
+  right: 30px;
+}
+
+.completed-item {
+  text-decoration: line-through;
+  text-align: left;
+}
+
+/* Scroll bar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*Scroll bar Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Scroll bar Handle */
+::-webkit-scrollbar-thumb {
+  background: #a6a6a670; 
+  border-radius: 10px;
+}
+
+/* Scroll bar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6; 
+}
+
+@media (max-width: 480px) {
+
+  .task-input {
+    width: 60%;
+  }
+  .buttons{
+    text-align: center;
+  }
+}
